@@ -53,8 +53,9 @@ a:hover {
 }
 
 .icon {
-  height: 3em;
-  width: 3em
+  height: 2em;
+  width: 2em;
+  margin: 0 .5em 0 2em;
 }
 
 .contact {
@@ -66,6 +67,15 @@ a:hover {
   font-family: FloodStd;
   color: black;
 }
+
+.nameTitle {
+  margin-left: 3em;
+}
+
+/*.project {
+  display: block;
+  margin: auto;
+}*/
 
 .project-pic {
   height: 70%;
