@@ -7,6 +7,7 @@ body {
 	font-family: Optima;
   color: #7A7E80;
   margin: 0;
+  position: relative;
 }
 
 hr {
@@ -14,7 +15,6 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  /*margin: 1em 5em;*/
   padding: 0;
 }
 
@@ -31,16 +31,51 @@ a:hover {
   color: #ED713B;
 }
 
-#nav {
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* make list items horizontal */
+li {
+  float: left;
+  padding: 0 1em;
+  font-family: 'roboto';
+}
+
+li a {
+  display: block;
+  text-align: center;
+}
+
+#navigation {
+  position: fixed;
+  z-index: 1000;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  display: block;
+  z-index: 3;
+}
+
+#container {
+  margin: 0 5em;
 }
 
 #homeimage {
   width: 100%;
-  height: 50%;
+  padding-top: 50px;
 }
 
 #about {
-	background-size: cover;
+  background-size: cover;
   display: flex;
   left: 0;
   top: 0;
@@ -48,8 +83,13 @@ a:hover {
   height: 100%;
 }
 
-.container {
-  margin: 0 5em 0 5em;
+#contact {
+  display: block;
+  margin: auto;
+}
+
+#project {
+  width: 100%;
 }
 
 .icon {
@@ -58,36 +98,30 @@ a:hover {
   margin: 0 .5em 0 2em;
 }
 
-.contact {
-  display: block;
-  margin: auto;
-}
-
 .title {
   font-family: FloodStd;
   color: black;
 }
 
-.nameTitle {
-  margin-left: 3em;
+.name-title {
+  font-size: 30px;
+  margin-left: 0;
 }
 
-/*.project {
-  display: block;
-  margin: auto;
+/*a:hover .name-title{
+  text-decoration: none;
 }*/
 
-.project-pic {
-  height: 70%;
-  width: 70%;
-}
-
 .project-details {
-  margin: 0 auto;
   width: 80%;
+  margin: auto;
 }
 
-
+.project-pic {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
 
 
 
