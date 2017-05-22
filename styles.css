@@ -71,6 +71,7 @@ li a {
 #contact {
   display: block;
   margin: auto;
+  opacity: 0;
 }
 
 #project {
@@ -182,4 +183,7 @@ li a {
   color: #FC7735;
 }
 
+.fadeIn {
+  opacity: 0;
+}
 
