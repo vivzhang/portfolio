@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'FloodStd';
-  src: url('assets/FloodStd.otf');
+  font-family: "FloodStd";
+  src: url("assets/FloodStd.otf");
 }
 
 body {
@@ -82,7 +82,7 @@ li a {
  .nav-li {
   float: left;
   padding: 0 1em;
-  font-family: 'roboto';
+  font-family: "roboto";
 }
 
 .hor-li {
@@ -176,6 +176,7 @@ li a {
   cursor: pointer;
   border: solid 3px #efefef;
   padding: 10px 50px;
+  margin: 0 auto;
 }
 
 .project-btn:hover {
@@ -183,7 +184,15 @@ li a {
   color: #FC7735;
 }
 
-.fadeIn {
+.center {
+  text-align: center;
+}
+
+.fade-in {
   opacity: 0;
 }
 
+.intro-fade-in {
+  opacity: 0;
+  padding-top: 100px;
+}
