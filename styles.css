@@ -6,16 +6,20 @@
 body {
 	font-family: Optima;
   color: #7A7E80;
-  margin: 0;
+  margin: 0 auto;
   position: relative;
+  line-height: 1.5;
+  text-align: left;
 }
 
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #E3E5E6;
+  margin-top: 40px;
   padding: 0;
+  width: 60%;
 }
 
 a,u {
@@ -42,62 +46,86 @@ li a {
   text-align: center;
 }
 
-#navigation {
+
+.nav {
   position: fixed;
   z-index: 1000;
-  display: -webkit-flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
   width: 100%;
-  display: block;
-  z-index: 3;
-  background-color: #fff;
+  background-color: #FFF;
+  height: 100px;
 }
 
-#container {
-  margin: 0 5em;
+/* make list items horizontal */
+.nav ul li {
+  float: left;
+  display: inline;
+  font-family: "roboto";
+}
+
+.nav ul li a {
+  padding: 10px 25px;
+  height: 20px;
+}
+
+.title {
+  font-family: FloodStd;
+  color:black;
+  padding-bottom: 40px;
+}
+
+#container p{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+  background-color: #F7F9FA;
 }
 
 #homeimage {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 100px;
+  vertical-align: top;
 }
 
 #contact {
   display: block;
   font-size: 18px;
-  width: 100%;
-  margin: 0;
-  opacity: 0;
+  margin: 0 auto;
+}
+
+#contact i {
+  font-size: 40px;
+  color:lightblue;
+  margin-right: 15px;
+}
+
+#contact ul li {
+  float: left;
+  display: inline;
+  padding: 25px 40px;
+  height: 90px;
+  line-height: 90px;
+}
+
+#contact ul li a {
 }
 
 #project {
   width: 100%;
 }
 
-/* make list items horizontal */
- .nav-li {
-  float: left;
-  padding: 0 1em;
-  font-family: "roboto";
-}
 
-.hor-li {
-  font-size: 17.5px;
-  float: left;
-  padding: 0;
-}
 
-.icon {
-  height: 30px;
-  width: 30px;
-  margin: 0 10px 0 40px;
-}
+
+
+
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -112,15 +140,6 @@ li a {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-.title {
-  font-family: FloodStd;
-  color: black;
-}
-
-.name-title {
-  font-size: 30px;
-  margin-left: 0;
-}
 
 .project-details {
   width: 80%;
@@ -140,14 +159,6 @@ li a {
 
 .images {
   text-align: center;
-}
-
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .alt-background {

@@ -2,45 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Vivian Zhang</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav id="navigation">
-    <div>
-      <div class="title name-title nav-li"><a href="#">VIVIAN ZHANG</a></div>
-      <div><a href="assets/Vivian_Zhang_Resume.pdf" target="_blank" class="nav-li">RESUME</a></div>
-      <div><a href="#contact" class="nav-li">PROJECTS</a></div>
-      <div><a href="#about" class="nav-li">CONTACT</a></div>
-    </div>
-  </nav>
+  <header>
+    <nav class="nav">
+      <ul>
+        <li class="title name-title" style="font-family:FloodStd;color:black;font-size:30px"><a href="#">VIVIAN ZHANG</a></li>
+        <li><a href="assets/Vivian_Zhang_Resume.pdf" target="_blank">RESUME</a></li>
+        <li><a href="#contact">PROJECTS</a></li>
+        <li><a href="#about">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <img id="homeimage" src="assets/flower3.jpg">
   <div id="container">
     <div id="about" class="wrapper">
-    <hr>
       <div class="intro-fade-in">
+        <hr>
         <p class="title">About Me</p>
         <p><span class="intro-name">Hello, I'm Vivian.</span> I am a full stack software engineer with professional and personal experience building applications with the newest technologies.</p>
+        <br />
         <p>I have a passion about solving difficult problems and I love shipping efficient algorithms and architecting clean, tested, scalable and structured code. I also deeply enjoy building engineering systems that automate tasks and make lives easier for the end user.</p>
+        <br />
         <p>I believe the first thing on Google"s list of Ten Things We Know to Be True: "Focus on the user and all else will follow."</p>
         <hr>
       </div>
-      <div id="contact" class="fade-in">
+      <nav id="contact" class="fade-in">
         <ul>
-          <li class="hor-li col-2"><img class="icon" src="assets/phone.png">1 718 200 2311</li>
-          <li class="hor-li col-3"><a href="mailto:vivian.mzh@gmail.com"><img class="icon" src="assets/email.png">vivian.mzh@gmail.com</a></li>
-          <li class="hor-li col-3"><a href="https://www.linkedin.com/in/vivianmzhang" target="_blank"><img class="icon" src="assets/linkedin.png">linkedin.com/in/vivianmzhang</a></li>
-          <li class="hor-li col-3"><a href="https://github.com/vivzhang" target="_blank"><img class="icon" src="assets/github.png">github.com/vivzhang</a></li>
+          <li><a href="#">
+            <i class="fa fa-mobile-phone"></i>
+            <span>1 718 200 2311</span>
+          </li>
+          <li><a href="mailto:vivian.mzh@gmail.com">
+            <i class="fa fa-envelope-o" style="font-size: 37px"></i>
+            <span>vivian.mzh@gmail.com</span>
+            </a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/vivianmzhang" target="_blank">
+            <i class="fa fa-linkedin-square"></i>
+            <span>linkedin.com/in/vivianmzhang</span>
+            </a>
+          </li>
+          <li><a href="https://github.com/vivzhang" target="_blank">
+            <i class="fa fa-github"></i>
+            <span>github.com/vivzhang</span>
+            </a>
+          </li>
         </ul>
-      </div>
+      </nav>
     </div>
-    <hr>
 
     <div id="projects">
       <div class="title fade-in">Recent Projects</div>
