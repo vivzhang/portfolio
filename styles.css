@@ -41,7 +41,6 @@ li a {
   text-align: center;
 }
 
-
 .nav {
   position: fixed;
   z-index: 1000;
@@ -174,6 +173,11 @@ li a {
   color: black;
   font-size: 25px;
   margin-top: 40px;
+}
+
+#projects .fade-in {
+  /*width: 100%;*/
+  margin: 0 auto;
 }
 
 .project-btn {
