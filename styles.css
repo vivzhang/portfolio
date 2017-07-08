@@ -17,7 +17,6 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #E3E5E6;
-  margin-top: 40px;
   padding: 0;
   width: 70%;
 }
@@ -29,10 +28,6 @@ a,u {
 /* stay as the same color as the parent element */
 a, a:visited, a:active {
   color: inherit;
-}
-
-a:hover {
-  color: #FC7735;
 }
 
 ul {
@@ -67,6 +62,10 @@ li a {
   height: 20px;
 }
 
+.nav ul li a:hover {
+  color: #87D0E8;
+}
+
 .title {
   font-family: FloodStd;
   font-size: 22px;
@@ -74,19 +73,17 @@ li a {
   padding-bottom: 40px;
 }
 
-#container p{
+#container #about p{
   width: 70%;
   margin: 0 auto;
 }
 
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
+#about {
   position: relative;
   width: 100%;
   margin: 0 auto;
   padding-top: 60px;
-  background-color: #FCFCF7;
+  background-color: #EDEFF0;
 }
 
 #homeimage {
@@ -96,57 +93,21 @@ li a {
 }
 
 #contact {
-  display: block;
   font-size: 18px;
-  width: 70%;
-  margin: 0 auto;
+  margin-top: 40px;
+  padding-bottom: 100px;
 }
 
 #contact i {
-  font-size: 40px;
+  font-size: 25px;
   color:lightblue;
-  margin-left: 5px;
   margin-right: 5px;
 }
 
-#contact ul li {
-  float: left;
-  display: inline;
-  padding-right: 35px;
-  height: 90px;
-  line-height: 90px;
-}
-
-#contact ul li a {
-}
-
-#project {
-  width: 100%;
-}
-
-
-
-
-
-
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-
-.project-details {
-  width: 80%;
-  margin: auto;
+#projects {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 100px;
 }
 
 .project-pic {
@@ -160,9 +121,21 @@ li a {
   height: 293px;
 }
 
-.images {
-  text-align: center;
+/*.images {
+  position: relative;
+  width: 100%;
 }
+
+.images div {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  left: 20px;
+  float: right;
+  color: #FFF;
+  font-size: 100px;
+  font-family: "FloodStd"; 
+}*/
 
 .alt-background {
   background-color: #edebeb;
@@ -173,12 +146,18 @@ li a {
   margin: 100px auto;
   background-color: #87D0E8;
   color: white;
-  border: transparent;
+  border: solid 1px #FFF;
   border-radius: 15px;
   padding: 15px 32px;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+}
+
+.resume-btn:hover {
+  background-color: #FFF;
+  color: #87D0E8;
+  border: solid 1px #87D0E8;
 }
 
 .footer {
@@ -211,8 +190,9 @@ li a {
 }
 
 .project-btn:hover {
-  border: solid 3px #FC7735;
-  color: #FC7735;
+  border: solid 3px #7A7E80;
+  color: #FFF;
+  background-color: #7A7E80;
 }
 
 .center {
@@ -227,3 +207,68 @@ li a {
   opacity: 0;
   padding-top: 100px;
 }
+
+#skills {
+  height: 500px;
+  background-color: #212120;
+  padding-top: 100px;
+  margin-bottom: 100px;
+  color: #FFF;
+}
+
+#skills ul li div:first-child {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: solid 3px #87D0E8;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  /* make text stay center of the circle */
+  display:flex;
+  text-align: center;
+  justify-content:center;
+  align-items:center;
+}
+
+#hobbies ul {
+  width: 70%;
+  margin: 0 auto;
+  color: #5C5C5A;
+}
+
+#hobbies i {
+  font-size: 50px;
+}
+
+
+/* flexbox grid */
+
+.row {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+#skills .col {
+  flex: 1;
+}
+
+#hobbies .col {
+  flex: 1;
+  margin-top: 40px;
+}
+
+#contact .col {
+  flex: 1;
+}
+
+
+@media screen and (min-width: 500px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+
